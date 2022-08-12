@@ -70,6 +70,17 @@ exports.shortnerUrl = async (req, res) => {
 
         const shortUrl = `http://localhost:3000/${urlCode}`;
 
+        let arr = 'abcdefghijklmnopqrstuvwxyz0123456789@/!$%&'
+
+// // console.log(Math.floor(x*10))
+// let code = ""
+// for(let i=0; i<6; i++){
+//     let x = (Math.random())*100
+//     x = (Math.floor(x)%42)
+//     code +=arr[x]
+// }
+// console.log(code)
+        
         data.urlCode = urlCode;
         data.shortUrl = shortUrl;
 
